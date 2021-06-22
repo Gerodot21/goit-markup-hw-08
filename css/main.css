@@ -31,6 +31,7 @@ p {
 
 img {
   display: block;
+  width: 100%;
 }
 
 .list {
@@ -1040,6 +1041,15 @@ img {
   height: 60px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .partners {
+    justify-content: center;
+  }
+  .partners__block {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .partners__block {
     margin-bottom: 30px;
@@ -1128,7 +1138,7 @@ img {
   text-decoration: none;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer {
     text-align: center;
   }
