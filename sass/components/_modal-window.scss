@@ -3,7 +3,6 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 450px;
 	background-color: var(--cheaf-color);
 	border-radius: 4px;
 	&__button {
@@ -26,6 +25,11 @@
 			width: 18px;
 			height: 18px;
 		}
+	}
+}
+@media screen and (min-width: 480px) {
+	.modal {
+		min-width: 450px;
 	}
 }
 @media screen and (min-width: 1200px) {

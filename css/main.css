@@ -311,7 +311,6 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
   background-color: var(--cheaf-color);
   border-radius: 4px;
 }
@@ -337,6 +336,12 @@ img {
   display: block;
   width: 18px;
   height: 18px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -427,7 +432,6 @@ img {
   display: flex;
   justify-content: space-evenly;
   font-size: 12px;
-  line-height: 1.16px;
   margin-bottom: 30px;
   align-items: center;
   letter-spacing: 0.03em;
@@ -456,7 +460,6 @@ img {
   margin: 0;
   padding: 0;
   font-size: 12px;
-  line-height: 1.16px;
   color: var(--third-color);
   letter-spacing: 0.03em;
 }
@@ -489,6 +492,15 @@ img {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .form__checkbox {
+    line-height: 1.16px;
+  }
+  .form__checkbox-contract {
+    line-height: 1.16px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
