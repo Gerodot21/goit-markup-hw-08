@@ -1,0 +1,23 @@
+body {
+	background-color: var(--cheaf-color);
+	color: var(--primary-text-color);
+	font-family: Roboto, sans-serif;
+	letter-spacing: 0.03em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	padding: 0;
+	margin: 0;
+}
+img {
+	display: block;
+}
+.list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}

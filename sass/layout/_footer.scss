@@ -1,0 +1,88 @@
+.footer {
+	background-color: var(--background-color);
+
+	.container {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	&__block {
+		margin-bottom: 60px;
+	}
+	&__network {
+		margin-bottom: 60px;
+	}
+	.item {
+		padding-bottom: 10px;
+	}
+	&__logo {
+		font-family: Raleway, sans-serif;
+		color: var(--primary-text-color);
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1.18;
+		text-decoration: none;
+		&-web {
+			color: var(--third-color);
+		}
+		&-studio {
+			color: var(--cheaf-color);
+		}
+	}
+	&_address {
+		padding-top: 20px;
+		padding-bottom: 10px;
+		font-style: normal;
+		color: var(--cheaf-color);
+		font-size: 14px;
+		line-height: 1.71;
+		text-decoration: none;
+	}
+	&_contacts {
+		color: var(--cheaf-color);
+		opacity: 0.6;
+		font-size: 14px;
+		line-height: 1.71;
+		text-decoration: none;
+	}
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+	.footer {
+		text-align: center;
+	}
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+	.footer {
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&__block {
+			margin-left: 76px;
+			margin-right: 165px;
+		}
+		&__input {
+			width: 450px;
+			margin: 0 auto;
+		}
+	}
+}
+@media screen and (min-width: 1200px) {
+	.footer {
+		.container {
+			display: flex;
+			align-items: baseline;
+		}
+		&__logo {
+			font-size: 26px;
+			font-weight: 700;
+			line-height: 1.19;
+		}
+		&__block {
+			margin-right: 70px;
+		}
+		&__network {
+			margin-right: 93px;
+		}
+	}
+}

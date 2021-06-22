@@ -1,0 +1,53 @@
+.team {
+	background-color: var(--auxiliary-color);
+	&__list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		text-align: center;
+	}
+	&__item {
+		background-color: var(--cheaf-color);
+		box-shadow: var(--box-shadow);
+		border-radius: 4px;
+	}
+	&__name-player {
+		padding-top: 30px;
+		padding-bottom: 10px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.18;
+	}
+	&__profession {
+		padding-bottom: 16px;
+		color: var(--secondary-text-color);
+		font-size: 16px;
+		line-height: 1.18;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.team {
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&__item {
+			margin-right: 30px;
+			margin-bottom: 30px;
+		}
+		&__item:nth-child(2n) {
+			margin-right: -30px;
+		}
+	}
+}
+@media screen and (min-width: 1200px) {
+	.team {
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&__item:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+}

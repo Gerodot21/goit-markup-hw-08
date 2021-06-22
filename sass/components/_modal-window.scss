@@ -1,0 +1,35 @@
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 450px;
+	background-color: var(--cheaf-color);
+	border-radius: 4px;
+	&__button {
+		position: absolute;
+		top: 8px;
+		right: 8px;
+		cursor: pointer;
+		padding: 6px;
+		border-radius: 50%;
+		text-align: center;
+		background-color: var(--cheaf-color);
+		border-color: rgba(0, 0, 0, 0.1);
+		transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+		&:hover {
+			fill: var(--third-color);
+		}
+		&-icon {
+			display: block;
+			width: 18px;
+			height: 18px;
+		}
+	}
+}
+@media screen and (min-width: 1200px) {
+	.modal {
+		width: 528px;
+	}
+}
