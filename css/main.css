@@ -129,10 +129,9 @@ img {
 }
 
 .team__network {
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-bottom: 30px;
-  justify-content: space-between;
+  padding-bottom: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .team__network-link {
@@ -158,6 +157,12 @@ img {
   width: 20px;
   height: 20px;
   margin: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__network {
+    padding-bottom: 30px;
+  }
 }
 
 .footer__button {
@@ -972,6 +977,7 @@ img {
   background-color: var(--cheaf-color);
   box-shadow: var(--box-shadow);
   border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .team__name-player {
